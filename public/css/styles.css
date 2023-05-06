@@ -1,8 +1,8 @@
 html {
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
-  min-height: 1000px;
   font-family: 'helvetica neue';
+  min-height: 100vh;
 }
 
 .container{
@@ -67,6 +67,7 @@ form {
 }
 
 button {
+  float: right;
   min-height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -75,6 +76,7 @@ button {
   color: #fff;
   font-size: 30px;
   border-width: 0;
+  margin-bottom: 5px;
 }
 
 button:active{
@@ -91,11 +93,19 @@ input[type="text"] {
   font-size: 20px;
   font-weight: 200;
   width: 313px;
+  margin-bottom: 5px;
 }
 
 input[type="text"]:focus { /* tao hieu ung underline khi an vao */
   outline: none;
   box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+.item.input{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
 }
 
 ::placeholder {
@@ -104,7 +114,10 @@ input[type="text"]:focus { /* tao hieu ung underline khi an vao */
 }
 
 footer {
+  position: absolute;
   color: white;
   color: rgba(0, 0, 0, 0.5);
+  width: 100%;
   text-align: center;
+  bottom: 15px;
 }
