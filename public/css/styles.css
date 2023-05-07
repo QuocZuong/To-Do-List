@@ -22,6 +22,10 @@ h1 {
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
+.box:nth-child(2){
+  margin-bottom: 10px;
+}
+
 #heading {
   background-color: #A683E3;
   text-align: center;
@@ -108,16 +112,20 @@ input[type="text"]:focus { /* tao hieu ung underline khi an vao */
   margin: 0;
 }
 
+.item.input:last-child{
+  margin-bottom: 5px;
+}
+
 ::placeholder {
   color: grey;
   opacity: 1;
 }
 
 footer {
-  position: absolute;
+  position: relative;
   color: white;
   color: rgba(0, 0, 0, 0.5);
   width: 100%;
   text-align: center;
-  bottom: 15px;
+  margin-bottom: -90%;
 }
